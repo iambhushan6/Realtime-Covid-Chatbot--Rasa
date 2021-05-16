@@ -1,6 +1,8 @@
 "# Realtime-Covid-Chatbot--Rasa" 
 -Example chat use this to test bot:-
 
+- Telegram: @corona19help_bot  Use this bot on telegram for realtime updates
+- 
 - User:   corona help
 - Bot:    Hello! My name is Businessonbot!
           Do not panic. Enter your City name Eg. Chennai -
