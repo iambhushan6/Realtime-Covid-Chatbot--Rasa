@@ -15,5 +15,5 @@
         asahayog/, Call-on:2024537655, State:Maharashtra, Description:Free food service
 
 
-- User:   /restart                                               # To restart the conversions
+- User:   /restart or /stop                                              # To restart or stop the conversions
 - Bot:    covid help
