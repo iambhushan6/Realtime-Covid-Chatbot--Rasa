@@ -1,7 +1,7 @@
 "# Realtime-Covid-Chatbot--Rasa" 
 -Example chat use this to test bot:-
 
-- Telegram: @corona19help_bot  Use this bot on telegram for realtime updates
+- Telegram: @corona19help_bot  Use this bot on telegram for realtime updates. It will work untill I have turned on ngrok on my laptop, please take this into consideration.
 - 
 - User:   corona help
 - Bot:    Hello! My name is Businessonbot!
