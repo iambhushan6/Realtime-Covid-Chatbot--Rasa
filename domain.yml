@@ -1,0 +1,92 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - name_entry
+  - user_name_entry:
+      use_entities:
+        - name
+  - user_pincode_entry:
+      use_entities:
+        - pincode
+  - user_service_entry:
+      use_entities:
+        - service
+
+entities:
+  - name
+  - pincode
+  - service
+
+slots:
+  name:
+    type: text
+  pincode:
+    type: text
+  service:
+    type: text
+
+responses:
+
+  utter_return_name_pincode:
+  - text: "Your entered pincode is {pincode}. PINCODE INFO:- {pininfo}. YOUR SELECTED SERVICE: {serviceinfo}"
+
+  utter_ask_name:
+  - text: "Do not panic. Enter your City name Eg. Chennai -"
+
+  utter_ask_pincode:
+  - text: "Enter your pincode Eg. 600036:"
+
+  utter_ask_service:
+    - text: "Enter the service you need: Eg. freefood"
+
+  utter_name:
+  - text: "Hello! My name is Businessonbot! "
+
+  utter_thanks:
+  - text: "Thank you for cooperation!"
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - action_submit
+
+forms:
+  user_details_form:
+    name:
+      - type: from_entity
+        entity: name
+    pincode:
+      - type: from_entity
+        entity: pincode
+    service:
+      - type: from_entity
+        entity: service
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

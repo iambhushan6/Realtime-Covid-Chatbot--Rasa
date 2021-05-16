@@ -1,0 +1,49 @@
+version: "2.0"
+
+stories:
+
+#- story: User name pincode path
+#  steps:
+#  - intent: name_entry
+#  - action: utter_name
+#  - action: utter_ask_name
+#  - intent: user_name_entry
+#    entities:
+#      - name: "rahul"
+#  - slot_was_set:
+#      - name: "rahul"
+#  - action: utter_ask_pincode
+#  - intent: user_pincode_entry
+#    entities:
+#      - pincode: "411046"
+#  - slot_was_set:
+#      - pincode: "411046"
+#  - action: utter_thanks
+#  - action: utter_return_name_pincode
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye

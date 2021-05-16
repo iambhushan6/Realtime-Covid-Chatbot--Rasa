@@ -1,0 +1,34 @@
+version: "2.0"
+
+rules:
+
+- rule: Activate form name and pincode and service
+  steps:
+    - intent: name_entry
+    - action: utter_name
+    - action: user_details_form
+    - active_loop : user_details_form
+
+- rule: Submit Form
+  condition:
+  #form is active from here
+  - active_loop: user_details_form
+  steps:
+  # form is deactivated here
+  - action: user_details_form
+  - active_loop: null
+  - slot_was_set:
+      - requested_slot: null
+  # when form is submitted we want this to run
+  - action: action_submit
+
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

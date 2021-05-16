@@ -1,0 +1,131 @@
+version: "2.0"
+
+nlu:
+
+- intent: name_entry
+  examples: |
+    - corona help
+    - covid help
+    - covid 19 help
+    - help
+    - corona
+
+- intent: user_name_entry
+  examples: |
+    - my city is [delhi]{"entity":"name", "value":"delhi"}
+    - my city is [mumbai]{"entity":"name", "value":"mumbai"}
+    - my name is [arpan]{"entity":"name", "value":"arpan"}
+    - [chennai]{"entity":"name", "value":"chennai"}
+    - [kolkata]{"entity":"name", "value":"kolkata"}
+    - [bidar]{"entity":"name", "value":"bidar"}
+    - [banglore]{"entity":"name", "value":"banglore"}
+    - [madurai]{"entity":"name", "value":"madurai"}
+    - [hyderabad]{"entity":"name", "value":"hyderabad"} here
+    - city is [pune]{"entity":"name", "value":"pune"}
+
+- intent: user_service_entry
+  examples: |
+    - [fundraisers]{"entity":"service", "value":"fundraisers"}
+    - [CoVID-19 Testing Lab]{"entity":"service", "value":"CoVID-19 Testing Lab"}
+    - [accommodation and shelter homes]{"entity":"service", "value":"Accommodation and Shelter Homes"}
+    - [freefood]{"entity":"service", "value":"free food"}
+    - [government helpline]{"entity":"service", "value":"free food"}
+    - [other]{"entity":"service", "value":"other"}
+
+- intent: user_pincode_entry
+  examples: |
+    - my pincode is [600036]{"entity":"pincode", "value":"600036"}
+    - [500081]{"entity":"pincode"}
+    - [600036]{"entity":"pincode"}
+    - [411046]{"entity":"pincode"} is my pincode
+    - pincode is [425201]{"entity":"pincode", "value":"425201"}
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
