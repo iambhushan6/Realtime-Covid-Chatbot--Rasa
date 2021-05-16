@@ -10,11 +10,11 @@
 - Bot:    Enter your pincode Eg. 600036:
 - User:   411046                                                # Any pincode here
 - Bot:    Enter the service you need: Eg. free food     # To know more services click here: http://ec2-3-23-130-174.us-east-           2.compute.amazonaws.com:8000/categories
-- User:   fundraisers    
+- User:   fundraisers / CoVID-19 Testing Lab / accommodation and shelter homes / freefood / government helpline / other  
 - Bot:    Your entered pincode is 411046. PINCODE INFO:- Name: Ambegaon BK,DeliveryStatus
-        : Delivery,Circle:Maharashtra,District:Pune,Region:Pune,State:Maharashtra. YOUR
-         SELECTED SERVICE: Service: Fundraisers,City:Pune ,website:www.facebook.com/sev
-        asahayog/, Call-on:2024537655, State:Maharashtra, Description:Free food service
+          : Delivery,Circle:Maharashtra,District:Pune,Region:Pune,State:Maharashtra. YOUR
+          SELECTED SERVICE: Service: Fundraisers,City:Pune ,website:www.facebook.com/sev
+          asahayog/, Call-on:2024537655, State:Maharashtra, Description:Free food service
 
 
 - User:   /restart or /stop                                              # To restart or stop the conversions
